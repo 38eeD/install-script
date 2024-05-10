@@ -13,8 +13,13 @@ After you finish installing arch manually or using archinstall (if you want to u
 Install steps:
 
 Install git using `sudo pacman -S git`
+
 Type `mkdir inst-script` to create a directory.
+
 Run `git clone https://github.com/38eeD/install-script.git ~/inst-script`
+
 Execute `chmod +x ~/script.sh`
+
 Change directory by typing `cd /inst-script`
+
 Run `./script.sh` to execute the script.
