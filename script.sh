@@ -1,11 +1,14 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
-    echo "Please run this script as root."
+if [ "$EUID" -eq 0 ]; then
+    echo "Please do not run this script as root."
     exit 1
 fi
 
 sudo sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
+
+echo "Updating package repositories..."
+sudo pacman -Syu --noconfirm
 
 packages=("discord" "steam" "neofetch" "xfce4" "xfce4-goodies" "alacritty" "firefox")
 
