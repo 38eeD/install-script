@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
-    echo "Please run this script as root."
+if [ "$EUID" -eq 0 ]; then
+    echo "Please do not run this script as root."
     exit 1
 fi
 
-sudo sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
+sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 
 packages=("discord" "steam" "neofetch" "xfce4" "xfce4-goodies" "alacritty" "firefox" "git")
 
@@ -36,6 +36,8 @@ main() {
 main
 
 sudo pacman -S --needed base-devel
+
+exit
 
 git clone https://aur.archlinux.org/paru.git ~/paru 
 cd ~/paru
