@@ -24,6 +24,6 @@ Give permission by running `chmod +x script.sh`
 
 Execute `./script.sh` to run the script.
 
-
+Now You officially completed all you need now all you need is to wait until the script is completed.
 
 If you wonder why we did not update our package managee it is because the script will automate the process of syncing and updating the package manager by using `sudo pacman -Syu --noconfirm`
