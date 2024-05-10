@@ -24,4 +24,6 @@ Give permission by running `chmod +x script.sh`
 
 Execute `./script.sh` to run the script.
 
-If you wonder why we did not update our package managee it is because the script will update it for you by executing `sudo pacman -Syu`
+
+
+If you wonder why we did not update our package managee it is because the script will automate the process of syncing and updating the package manager by using `sudo pacman -Syu --noconfirm`
