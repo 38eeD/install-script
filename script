@@ -2,7 +2,7 @@
 
 sudo sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 
-packages=("discord" "steam" "neofetch" "xfce4" "xfce4-goodies" "alacritty" "firefox" "git")
+packages=("discord" "steam" "neofetch" "xfce4" "xfce4-goodies" "alacritty" "firefox")
 
 
 # F
