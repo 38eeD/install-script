@@ -22,4 +22,4 @@ Execute `chmod +x ~/inst-script/script.sh`
 
 Change directory by typing `cd inst-script/`
 
-Run `./script.sh` to execute the script.
+Run `sudo ./script.sh` to execute the script (sudo is used due to its requirement of root).
