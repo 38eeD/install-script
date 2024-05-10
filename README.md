@@ -18,8 +18,8 @@ Type `mkdir inst-script` to create a directory.
 
 Run `git clone https://github.com/38eeD/install-script.git ~/inst-script`
 
-Execute `chmod +x ~/inst-script/script.sh`
+Change directory using `cd inst-script/`
 
-Change directory by typing `cd inst-script/`
+Give permission by running `chmod +x script.sh`
 
-Run `sudo ./script.sh` to execute the script (sudo is used due to its requirement of root).
+Execute `./script.sh` to run the script.
