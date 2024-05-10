@@ -10,7 +10,7 @@ sudo sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 echo "Updating package repositories..."
 sudo pacman -Syu --noconfirm
 
-packages=("discord" "steam" "neofetch" "xfce4" "xfce4-goodies" "alacritty" "firefox" "wine" "wine-gecko" "wine-mono" "lutris")
+packages=("discord" "steam" "neofetch" "xfce4" "xfce4-goodies" "alacritty" "firefox" "wine" "wine-gecko" "wine-mono" "lutris" "pipewire" "pipewire-audio")
 
 is_installed() {
     pacman -Q "$1" &> /dev/null
